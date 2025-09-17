@@ -27,24 +27,24 @@ const navigation = [
   {
     title: "Overview",
     items: [
-      { title: "Dashboard", url: "/", icon: LayoutDashboard },
-      { title: "Field Maps", url: "/fields", icon: Map },
-      { title: "Crop Health", url: "/health", icon: Leaf },
+      { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
+      { title: "Field Maps", url: "/dashboard/fields", icon: Map },
+      { title: "Crop Health", url: "/dashboard/health", icon: Leaf },
     ],
   },
   {
     title: "Monitoring", 
     items: [
-      { title: "Live Alerts", url: "/alerts", icon: AlertTriangle },
-      { title: "Environmental", url: "/environmental", icon: Droplets },
-      { title: "Analytics", url: "/analytics", icon: BarChart3 },
+      { title: "Live Alerts", url: "/dashboard/alerts", icon: AlertTriangle },
+      { title: "Environmental", url: "/dashboard/environmental", icon: Droplets },
+      { title: "Analytics", url: "/dashboard/analytics", icon: BarChart3 },
     ],
   },
   {
     title: "System",
     items: [
-      { title: "AI Models", url: "/models", icon: Activity },
-      { title: "Settings", url: "/settings", icon: Settings },
+      { title: "AI Models", url: "/dashboard/models", icon: Activity },
+      { title: "Settings", url: "/dashboard/settings", icon: Settings },
     ],
   },
 ];
