@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -30,6 +31,14 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -46,6 +55,19 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        chart: {
+          primary: "hsl(var(--chart-primary))",
+          secondary: "hsl(var(--chart-secondary))",
+          tertiary: "hsl(var(--chart-tertiary))",
+          quaternary: "hsl(var(--chart-quaternary))",
+        },
+        health: {
+          excellent: "hsl(var(--health-excellent))",
+          good: "hsl(var(--health-good))",
+          moderate: "hsl(var(--health-moderate))",
+          poor: "hsl(var(--health-poor))",
+          critical: "hsl(var(--health-critical))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
