@@ -18,7 +18,7 @@ const Home = () => {
   const features = [
     {
       icon: Leaf,
-      title: "AI-Powered Crop Health",
+      title: "FarmFIT",
       description: "Advanced hyperspectral imaging and AI models detect crop stress, diseases, and pest risks before they become visible to the naked eye."
     },
     {
@@ -54,7 +54,7 @@ const Home = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Sprout className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">AgriAI Platform</span>
+            <span className="text-xl font-bold text-foreground">FarmFIT</span>
           </div>
           <div className="flex items-center space-x-4">
             <Link to="/signin">
@@ -203,7 +203,7 @@ const Home = () => {
               <Link to="/login">
                 <Button size="lg" className="group">
                   Start Your Journey
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-3 h-3 w-3 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
             </div>
@@ -278,7 +278,7 @@ const Home = () => {
               <span className="text-lg font-semibold text-foreground">AgriAI Platform</span>
             </div>
             <div className="text-sm text-muted-foreground">
-              © 2024 AgriAI Platform. Empowering sustainable agriculture through AI.
+              © 2025 FarmFIT Platform. Empowering sustainable agriculture through AI.
             </div>
           </div>
         </div>

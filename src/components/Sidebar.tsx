@@ -28,7 +28,6 @@ const navigation = [
     title: "Overview",
     items: [
       { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
-      { title: "Field Maps", url: "/dashboard/fields", icon: Map },
       { title: "Crop Health", url: "/dashboard/health", icon: Leaf },
     ],
   },
@@ -75,7 +74,7 @@ export function AppSidebar() {
                 <Leaf className="h-5 w-5 text-primary-foreground" />
               </div>
               <div>
-                <h2 className="text-lg font-semibold">AgriAI</h2>
+                <h2 className="text-lg font-semibold">FarmFIT</h2>
                 <p className="text-xs text-muted-foreground">Smart Farming Platform</p>
               </div>
             </div>

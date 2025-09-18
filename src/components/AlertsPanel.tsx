@@ -83,7 +83,7 @@ export function AlertsPanel() {
   };
 
   return (
-    <Card className="h-[400px]">
+    <Card className="h-[450px]">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center space-x-2">
@@ -150,7 +150,7 @@ export function AlertsPanel() {
           })}
         </div>
         
-        <div className="mt-4 pt-3 border-t">
+        <div className="mt-3 pt-3 border-t">
           <Button variant="outline" className="w-full" size="sm">
             View All Alerts
           </Button>

@@ -12,20 +12,12 @@ import {
   MapPin,
   Zap
 } from "lucide-react";
-import { FieldMap } from "./FieldMap";
 import { HealthChart } from "./HealthChart";
 import { AlertsPanel } from "./AlertsPanel";
 import { EnvironmentalMonitor } from "./EnvironmentalMonitor";
 
 export function Dashboard() {
   const stats = [
-    {
-      title: "Active Fields",
-      value: "24",
-      change: "+2 this week",
-      icon: MapPin,
-      status: "good"
-    },
     {
       title: "Crop Health Score",
       value: "87%",
@@ -68,7 +60,7 @@ export function Dashboard() {
       </div>
 
       {/* Stats Grid */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {stats.map((stat, index) => {
           const Icon = stat.icon;
           const healthColor = `health-${stat.status}` as const;
@@ -93,23 +85,21 @@ export function Dashboard() {
       </div>
 
       {/* Main Content Grid */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {/* Field Map - Takes 2 columns */}
-        <div className="lg:col-span-2">
-          <FieldMap />
-        </div>
-
-        {/* Alerts Panel */}
-        <div>
-          <AlertsPanel />
-        </div>
-      </div>
+      
 
       {/* Bottom Grid */}
       <div className="grid gap-6 md:grid-cols-2">
         <HealthChart />
-        <EnvironmentalMonitor />
+        
+        <AlertsPanel />
+      </div>
+      <div className="grid gap-0 md:grid-cols-1 lg:grid-cols-1 ">
+        {/* Alerts Panel */}
+        <div>
+          <EnvironmentalMonitor />
+        </div>
       </div>
     </div>
+
   );
 }
